@@ -19,6 +19,7 @@
   "homepage": "https://github.com/edwardhunton/fitwatchui#readme",
   "dependencies": {
     "fs": "0.0.2",
-    "http": "0.0.0"
+    "http": "0.0.0",
+    "newrelic": "^1.25.0"
   }
 }
