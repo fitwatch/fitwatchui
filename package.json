@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/edwardhunton/fitwatchui/issues"
   },
-  "homepage": "https://github.com/edwardhunton/fitwatchui#readme"
+  "homepage": "https://github.com/edwardhunton/fitwatchui#readme",
+  "dependencies": {
+    "fs": "0.0.2",
+    "http": "0.0.0"
+  }
 }
