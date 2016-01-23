@@ -2,6 +2,8 @@ require('newrelic');
 
 var http = require('http'),
     fs = require('fs');
+
+
 function serveStaticFile(res, path, contentType, responseCode) {
     if (!responseCode) responseCode = 200;
     fs.readFile(__dirname + path, function (err, data) {
@@ -16,7 +18,7 @@ function serveStaticFile(res, path, contentType, responseCode) {
     });
 }
 
-
+var port = process.env.PORT || 3000;
 http.createServer(function(req,res){
 // normalize url by removing querystring, optional // trailing slash, and making lowercase
     var path = req.url.replace(/\/?(?:\?.*)?$/, '')
@@ -32,6 +34,6 @@ http.createServer(function(req,res){
             serveStaticFile(res, '/public/404.html', 'text/html',
                 404); break;
     }
-}).listen(3000);
-console.log('Server started on localhost:3000; press Ctrl-C to terminate....');
+}).listen(port);
+console.log('Server started on localhost:'+port+'; press Ctrl-C to terminate....');
 
