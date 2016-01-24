@@ -4,9 +4,8 @@
   "description": "Home of fitwatch front end",
   "main": "dist/bundle.js",
   "scripts": {
-    "start": "node node_modules/.bin/webpack-dev-server --content-base dist",
-    "build": "NODE_ENV=production node",
-      "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "NODE_ENV=production node node_modules/.bin/webpack && cp src/index.html dist/index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -20,6 +19,7 @@
   "homepage": "https://github.com/edwardhunton/fitwatchui#readme",
   "dependencies": {
     "angular": "^1.4.9",
+    "express": "^4.13.4",
     "fs": "0.0.2",
     "http": "0.0.0",
     "newrelic": "^1.25.0",
