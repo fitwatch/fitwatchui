@@ -1,0 +1,16 @@
+{
+  "name": "fitwatchui",
+  "version": "0.0.0",
+  "homepage": "https://github.com/edwardhunton/fitwatchui",
+  "authors": [
+    "edwardhunton <edward.hunton@rightster.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
