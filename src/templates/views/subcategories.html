@@ -1,5 +1,6 @@
-<ul>
-    <li><a href="#videos">Videos</a></li>
-    <li><a href="#notes">Notes</a></li>
-    <li><a href="#links">Links</a></li>
+
+<h1>{{section.name}}</h1>
+<a href="main">Back</a>
+<ul ng-repeat="content in contents">
+    <li><a href="{{content.name}}">{{content.name}}</a></li>
 </ul>
