@@ -4,7 +4,7 @@
   "description": "Home of fitwatch front end",
   "main": "dist/bundle.js",
   "scripts": {
-"start": "server.js",
+"start": "./server.js",
     "build": "NODE_ENV=production node node_modules/.bin/webpack && cp src/index.html dist/index.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
