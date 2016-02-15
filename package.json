@@ -4,7 +4,7 @@
   "description": "Home of fitwatch front end",
   "main": "dist/bundle.js",
   "scripts": {
-"start": "./server.js",
+    "start": "node node_modules/.bin/webpack-dev-server --content-base dist",
     "build": "NODE_ENV=production node node_modules/.bin/webpack && cp src/index.html dist/index.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -21,6 +21,7 @@
   "dependencies": {
     "angular": "^1.4.9",
     "angular-route": "^1.4.9",
+    "angular-ui-bootstrap": "^1.1.2",
     "bootstrap-sass": "^3.2.0",
     "bootstrap-sass-webpack": "0.0.3",
     "express": "^4.13.4",
