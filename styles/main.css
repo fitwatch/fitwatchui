@@ -1,0 +1,14 @@
+body{
+
+}
+
+.sections, .items {
+    background-color: #000066;
+    list-style: none;
+    margin-bottom: 0;
+}
+.section, .item {
+    background-color: #000066;
+    padding: 15px;
+    color: #00d4b4;
+}

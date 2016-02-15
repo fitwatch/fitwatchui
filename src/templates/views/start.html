@@ -1,5 +1,5 @@
 <!--<button type="button" class="btn-lg btn-primary" ng-click="mc.setUp()">Play Now!</button>-->
 
-<ul ng-repeat="section in sections">
-    <li><a href="section/{{$index}}">{{section.name}}</a></li>
+<ul class="sections items" >
+    <li ng-repeat="section in sections" class="section item"><h2><a href="section/{{$index}}">{{section.name}}</a></h2></li>
 </ul>

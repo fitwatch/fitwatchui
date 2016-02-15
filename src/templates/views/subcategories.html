@@ -1,6 +1,6 @@
 
-<h1>{{section.name}}</h1>
-<a href="main">Back</a>
-<ul ng-repeat="content in contents">
-    <li><a href="{{content.name}}">{{content.name}}</a></li>
+<h1 class="section ">{{section.name}}</h1>
+<h2><a href="main">Back</a></h2>
+<ul class="sub-sections items">
+    <li ng-repeat="content in contents" class="sub-section item"><h2><a href="{{content.name}}/{{id}}">{{content.name}}</a></h2></li>
 </ul>

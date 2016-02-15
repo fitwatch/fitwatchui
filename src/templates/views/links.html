@@ -1,2 +1,7 @@
 <h1>Links</h1>
 <a href="section/{{id}}">Back</a>
+<ul>
+    <li ng-repeat="link in links"><a href="{{link.url}}">{{link.title}}</a></li>
+
+</ul>
+<a href="addLink/{{id}}">Add Link</a>
